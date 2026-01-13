@@ -1,3 +1,5 @@
+import profilePic from './assets/profile.png';
+
 type ChildProps = {
   letter: string;
   name: string;
@@ -10,7 +12,10 @@ type ChildProps = {
 function Child(props: ChildProps) {
   return (
     <div className="card">
-      <h2>Child Component</h2>
+
+       <img src={profilePic} alt="Profile" className="profile-pic"/>
+        
+      <h2>Grade in React</h2>
       <p>Name (VarChar:) {props.name}</p>
       <p>Age (Integer:) {props.age}</p>
       <p>Grade (Float:) {props.grade}</p>
